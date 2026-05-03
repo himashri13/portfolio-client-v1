@@ -18,7 +18,7 @@ export const portfolioData = {
       bullets: [
         "Led end-to-end business analysis for three high-impact government education projects: HRD Data Analytics Dashboard, HRD Grievance Management System, and Adverse Articles Web Application.",
         "Conducted stakeholder interviews and workshops with ministry officials to elicit, document, and validate functional and non-functional requirements, ensuring alignment with departmental KPIs and policy objectives.",
-        "Created detailed BRDs, FRDs, user stories, use cases, and acceptance criteria following industry-standard BA frameworks.",
+        "Created detailed BRDs, FRDs, user stories, user cases, and acceptance criteria following industry-standard BA frameworks.",
         "Performed UAT and functional testing of REST APIs and Power BI dashboards, validating data accuracy, integrity, and performance against defined SLAs.",
         "Facilitated Agile sprint ceremonies (planning, stand-ups, retrospectives) and managed backlog grooming in collaboration with developers, QA engineers, and product owners.",
         "Developed process flow diagrams, DFDs, and wireframes to communicate business logic and requirements to technical teams.",
@@ -88,6 +88,7 @@ export const portfolioData = {
       "Gap Analysis",
       "Process Mapping",
       "As-Is / To-Be Analysis",
+      "Requirement Workshops",
     ],
     "Project & Agile": [
       "Agile / Scrum",
@@ -133,4 +134,7 @@ export const portfolioData = {
     { label: "Sales Conversion Rate", value: "40%+" },
     { label: "Team Productivity Boost", value: "35%" },
   ],
+  socials: {
+    linkedin: "https://www.linkedin.com/in/himasri-nandam-158582189?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  },
 };

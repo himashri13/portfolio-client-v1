@@ -3,7 +3,7 @@
 import { portfolioData } from "@/lib/portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Briefcase, FileText } from "lucide-react";
+import { ArrowDown, Briefcase, FileText, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Spotlight } from "@/components/ui/spotlight";
 import { AceternityBackground } from "@/components/ui/aceternity-bg";
@@ -80,6 +80,16 @@ export function HeroSection() {
             >
               <FileText className="size-4" />
               Download Resume
+            </Button>
+          </a>
+          <a href={portfolioData.socials.linkedin} target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              variant="outline"
+              className="btn-hover rounded-full px-8 h-12 text-base gap-2 border-border/50"
+            >
+              <Linkedin className="size-4" />
+              LinkedIn
             </Button>
           </a>
         </motion.div>

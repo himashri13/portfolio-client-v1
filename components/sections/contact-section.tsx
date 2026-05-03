@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Phone, Send, Loader2 } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Loader2, Linkedin } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -35,6 +35,12 @@ const contactItems = [
     label: "Phone",
     value: portfolioData.phone,
     href: `tel:${portfolioData.phone.replace(/\s/g, "")}`,
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "Himasri Nandam",
+    href: portfolioData.socials.linkedin,
   },
   {
     icon: MapPin,
