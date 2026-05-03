@@ -3,7 +3,7 @@
 import { portfolioData } from "@/lib/portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Briefcase, FileText, Linkedin } from "lucide-react";
+import { ArrowDown, Briefcase, FileText, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { Spotlight } from "@/components/ui/spotlight";
 import { AceternityBackground } from "@/components/ui/aceternity-bg";
@@ -27,7 +27,17 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
+          className="relative"
         >
+          {/* Profile Picture */}
+          <div className="size-32 rounded-full border-2 border-border/50 p-1 mb-4 overflow-hidden bg-background/50 backdrop-blur-sm">
+            <img 
+              src="/HSN_profile_pic.JPG" 
+              alt="Himasri Nandam" 
+              className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+            />
+          </div>
+
           <Badge
             variant="outline"
             className="text-xs font-medium tracking-wide px-4 py-1.5 rounded-full border-border/80 bg-background/50 backdrop-blur-md"
@@ -88,7 +98,7 @@ export function HeroSection() {
               variant="outline"
               className="btn-hover rounded-full px-8 h-12 text-base gap-2 border-border/50"
             >
-              <Linkedin className="size-4" />
+              <ExternalLink className="size-4" />
               LinkedIn
             </Button>
           </a>
