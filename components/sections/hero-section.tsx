@@ -27,15 +27,19 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="relative"
+          className="flex flex-col items-center"
         >
-          {/* Profile Picture */}
-          <div className="size-32 rounded-full border-2 border-border/50 p-1 mb-4 overflow-hidden bg-background/50 backdrop-blur-sm">
-            <img 
-              src="/HSN_profile_pic.JPG" 
-              alt="Himasri Nandam" 
-              className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
-            />
+          {/* Profile Picture Container */}
+          <div className="relative mb-6">
+            <div className="size-40 rounded-full border-2 border-border/50 p-1.5 overflow-hidden bg-background/50 backdrop-blur-sm shadow-2xl">
+              <img 
+                src="/HSN_profile_pic.JPG" 
+                alt="Himasri Nandam" 
+                className="w-full h-full object-cover rounded-full object-center"
+              />
+            </div>
+            {/* Subtle glow effect behind picture */}
+            <div className="absolute inset-0 -z-10 bg-primary/20 blur-3xl rounded-full scale-110" />
           </div>
 
           <Badge
